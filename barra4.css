@@ -1,4 +1,4 @@
-@media screen, print {
+
 .tabla-dinamica-resultados{	
 	margin:0 auto;
 	padding:20px;
@@ -151,4 +151,3 @@
 .tabla-dinamica-resultados:hover .barra-lo *, .tabla-dinamica-resultados:hover .barra-lo2 *{
 	opacity:1;
 	}
-}

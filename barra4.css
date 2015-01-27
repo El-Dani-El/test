@@ -1,0 +1,154 @@
+@media screen, print {
+.tabla-dinamica-resultados{	
+	margin:0 auto;
+	padding:20px;
+	position:relative;
+	width:508px;
+	height:35px;}
+
+
+.linea-estandar{
+	width:3px;
+	background:#666;
+	height:39px;
+	float:left;	}
+
+.side-left{
+	width:250px;
+	position:relative;
+	height:50px;
+	float:left;
+	/*background:rgba(255,0,0,.1);*/
+	cursor:pointer;
+	}
+
+.side-right{
+	width:250px;
+	float:left;
+	height:50px;
+	/*background:rgba(0,255,0,.1);*/
+	cursor:pointer;
+	}
+
+
+.barra-in{	
+	min-width:25px;
+	max-width:125px;
+	/*width:26px;*/
+	background:#ee3a3a;
+	float:right;
+	height:35px;
+	box-shadow:0px 4px 0px 0px #d60000;
+	border-top-left-radius:5px;
+	border-bottom-left-radius:5px;
+	}
+	
+	.barra-in h6{		
+		text-shadow:0px 2px 1px #aa0000;
+		}
+
+.barra-pl{
+	min-width:25px;
+	max-width:125px;
+	/*width:54px;*/
+	float:right;
+	box-shadow:0px 4px 0px 0px #ce8d00;
+	background:#ffc80f;
+	height:35px;
+	}
+
+	.barra-pl h6{		
+		text-shadow:0px 2px 1px #b97e00;
+		}
+
+.barra-lo{
+	min-width:25px;	
+	max-width:125px;
+	/*width:88px;*/
+	background:#00ec64;
+	float:left;
+	height:35px;
+	box-shadow:0px 4px 0px 0px #00af4a;
+	transition:all .4s cubic-bezier(0.460, 0.005, 0.000, 0.990);
+	/*border-top-right-radius:5px;
+	border-bottom-right-radius:5px;*/
+	}
+	
+	.barra-lo h6{		
+		text-shadow:0px 2px 1px #008438;
+		}
+	
+.barra-lo2{
+	min-width:25px;
+	max-width:125px;
+	background:#007ee9;
+	/*width:32px;*/
+	float:left;
+	height:35px;
+	box-shadow:0px 4px 0px 0px #0058a2;
+	transition:all .3s cubic-bezier(0.460, 0.005, 0.000, 0.990);
+	border-top-right-radius:5px;
+	border-bottom-right-radius:5px;
+	}
+	
+	.barra-lo2 h6{		
+		text-shadow:0px 2px 1px #004076;
+		}
+
+.barra-lototal{
+	max-width:150px;
+	min-width:50px;
+	background:#1bec00;
+	/*width:120px;*/
+	position:absolute;
+	z-index:2;
+	box-shadow:0px 4px 0px 0px #13a200;
+	height:35px;
+	transition:all .3s cubic-bezier(0.460, 0.005, 0.000, 0.990);
+	border-top-right-radius:5px;
+	border-bottom-right-radius:5px;
+	}
+
+
+	.barra-lototal h6{		
+		text-shadow:0px 2px 1px #13a200;
+		}
+
+	.barra-lo2 *, .barra-lo *{		
+		transition:all .3s cubic-bezier(0.460, 0.005, 0.000, 0.990);
+		opacity:0;}
+
+.h5-info{
+	position:relative;
+	text-align:center;
+	line-height:0;
+	top:-10px;}
+
+
+
+
+.h6-porcentaje{
+	position:relative;
+	line-height:35px;
+	font-weight:900;
+	color:#fff;
+	font-size:15px;
+	text-align:center;}
+	
+
+
+.h4-alumnos{
+	position:relative;
+	text-align:center;
+	line-height:0;
+	font-size:12px;
+	top:12px;}
+
+.tabla-dinamica-resultados:hover .barra-lototal{
+	opacity:0;
+	}
+
+.tabla-dinamica-resultados:hover .barra-lo *, .tabla-dinamica-resultados:hover .barra-lo2 *{
+	opacity:1;
+	}
+}

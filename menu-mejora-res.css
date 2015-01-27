@@ -1,0 +1,205 @@
+@media screen, print {
+#logo{
+	width:100%;
+	position:relative;
+	height:4.5em;
+	background:url(../img/logo.svg) no-repeat center;
+	background-size:85%;
+	transition:opacity 0.7s cubic-bezier(0.460, 0.005, 0.000, 0.990);
+	transition-delay:.1s;
+	}
+
+header{
+	position:fixed;
+	width:15%;
+	background:#111;
+	height:100%;
+	z-index:2;
+	}
+
+header ul{
+	cursor:pointer;
+	}
+
+.log-semestre{
+	position:relative;
+	background:#000;
+	width:100%;
+	line-height:40px;
+	text-transform:uppercase;
+	font-size:10px;
+	letter-spacing:.7px;
+	text-align:center;
+	color:rgba(255,255,255,.75);
+	height:40px;}
+
+header li{
+	height:50px;
+	color:#08A;
+	position:relative;
+	text-transform:uppercase;
+	border-top:1px solid rgba(255,255,255,.05);
+	}
+
+header li span{
+	font-size:.75em;
+	color:#444;
+	letter-spacing:0;
+	text-transform:none;
+	}
+
+
+.sprite-icons{
+	position:absolute;
+	top:0;
+	left:0;
+	width:50px;
+	height:50px;
+	background:red;}
+
+header li h6{
+	font-size:.75em;
+	line-height:1.1em;
+	margin-left:55px;
+	padding-top:12px;
+	color:#555;
+	letter-spacing:.8px;
+	font-weight:400;
+	text-transform:uppercase;
+	}
+
+header li h6 b{
+	font-weight:normal;
+	color:#999;}
+
+
+.li-sub{
+	opacity:0;
+	background:#0C0C0C;
+	}
+
+
+.menu-on{
+	width:5px;
+	height:52px;
+	top:112px;
+	position:absolute;
+	right:0;
+	transition:all 0.3s cubic-bezier(0.460, 0.005, 0.000, 0.990);
+	background:#F33030;
+	}
+	
+.presentacion-icon{background:url(../img/resgenerales.png) no-repeat center;background-size:60%;}
+.resgenerales-icon{background:url(../img/resgenerales.png) no-repeat center;background-size:60%;}
+.resdetallados-icon{background:url(../img/resgenerales.png) no-repeat center;background-size:60%;}
+.rescursos-icon{background:url(../img/resgenerales.png) no-repeat center;background-size:60%;}
+.resanalisis-icon{background:url(../img/resgenerales.png) no-repeat center;background-size:60%;}
+.proyeccciones-icon{background:url(../img/resgenerales.png) no-repeat center;background-size:60%;}
+.filtros-icon{background:url(../img/resgenerales.png) no-repeat center;background-size:60%;}
+.imprimir-icon{background:url(../img/resgenerales.png) no-repeat center;background-size:60%;}
+
+
+@media screen and (min-width:960px) and (max-width: 1024px)  {
+	header{
+		width:2%;
+		cursor:pointer;		
+		transition:all 0.3s cubic-bezier(0.460, 0.005, 0.000, 0.990);
+		overflow:hidden;
+		border-right:2px solid #f33030;
+	}
+	
+	
+	header li h6{
+		font-size:.7em;
+		line-height:1.1em;
+		margin-left:55px;
+		padding-top:12px;
+		color:#555;
+		letter-spacing:.8px;
+		font-weight:400;
+		text-transform:uppercase;
+		}
+
+	
+	#logo{
+		min-width:190px;
+		max-width:190px;
+		opacity:0;	
+	}
+	
+	header ul{
+		opacity:0;
+	}
+	
+		
+	.menu-on{
+		display:none;}
+	
+	#open-menu{
+		position:absolute;
+		top:50%;
+		right:0;
+		width:30px;
+		background:url(../img/open.svg) no-repeat right #111;
+		transition:all .5s cubic-bezier(0.460, 0.005, 0.000, 0.990);	
+		height:52px;}
+		
+	
+	.log-semestre{
+		overflow:hidden;
+		transition:all 0.3s cubic-bezier(0.460, 0.005, 0.000, 0.990);
+		opacity:0;}
+	
+	header:hover{
+		width:20%;
+	}
+	
+	header:hover #open-menu{
+		right:-50px;
+	}
+		
+		
+	header:hover #logo{
+		opacity:1;
+		left:0;
+	}
+	
+	
+	header:hover .log-semestre{
+		opacity:1;
+	}
+	header:hover .li-sub h6{
+		opacity:1;
+	}
+	
+	header:hover ul{
+		display:block;
+		opacity:1;
+	}
+	
+	
+	#open-menu{
+		position:absolute;
+		top:50%;
+		right:0;
+		width:30px;
+		background:url(../img/open.svg) no-repeat right #111;
+		transition:all .5s cubic-bezier(0.460, 0.005, 0.000, 0.990);	
+		height:52px;}
+	
+	#main{margin-left:2%; width:98%;}
+	#top{margin-left:2%;  width:98%!important;}
+	
+		header li h6{
+		width:50%;}	
+		
+}
+
+@media screen and (min-width:1025px) and (max-width: 1360px)  {
+	
+	header li h6{
+		font-size:.7em;
+		line-height:1em;
+		}
+}
+}
